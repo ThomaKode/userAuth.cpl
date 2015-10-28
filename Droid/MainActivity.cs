@@ -13,14 +13,18 @@ using Android.Widget;
 
 namespace userAuth.cpl.Droid
 {
-	[Activity (Label = "MainActivity")]			
-	public class MainActivity : Activity
+	[Activity (Label = "userAuth.cpl.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = Android.Content.PM.ConfigChanges.Density | Android.Content.PM.ConfigChanges.Touchscreen)]			
+	public class MainActivity : global::Xamarin.Forms.Platform.Android.ActivityIndicatorRenderer 
+
 	{
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
-			// Create your application here
+			global::Xamarin.Forms.Forms.Init (this, bundle);
+
+			LoadApplication (new App ());
+			// Create your apponlication here
 		}
 	}
 }
