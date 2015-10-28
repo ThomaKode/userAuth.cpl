@@ -45,12 +45,12 @@ git status -sb
 #git checkout -b master
 #git checkout -b master origin master
 
-git stage app/test.sh
-git add app/test.sh
-cd Droid/Resources/drawable-hdpi/
-.\test.sh
+git stage Droid/userAuth.cpl.Droid.csproj
+git add Droid/userAuth.cpl.Droid.csproj
+cd Droid/
+.\userAuth.cpl.Droid.csproj
 cd C:/Users/RonThomas/Source/Repos/userAuthenticate/userAuth.cpl/
-git commit -m "Add newfile app/test.sh"
+git commit -m "Add newfile Droid/userAuth.cpl.Droid.csproj"
 
 
 git push origin HEAD:master
@@ -135,14 +135,14 @@ git push origin HEAD:Readme-1
 git pull origin Readme-1
 git diff -b
 git status -sb
-git checkout build
+git checkout master
 git pull https://github.com/ArcanaMagus/userAuth.cpl.git
 #git merge --no-ff  
-dos2unix app/test.sh
+dos2unix Droid/userAuth.cpl.Droid.csproj
 for {
-app/test.sh= var obj 
+Droid/userAuth.cpl.Droid.csproj= var obj 
 if (obj is unix) {
-unix2mac app/test.sh
+unix2mac Droid/userAuth.cpl.Droid.csproj
 }
 else (obj is mac) {
 null;
@@ -173,11 +173,16 @@ def: widget
 		 } 
 }
 , else  {
-bash  - start app/test.sh
+bash  - start Droid/userAuth.cpl.Droid.csproj
 }
 #condition
 if (diff >= 1) {
 const: eval: frame(in).shell
+}fi
+#condition2
+if (diff ==< 1) {
+while (diff != 0);
+	conset: eval: frame(locationAt(Error): void) in cmd 
 }fi
 while { const: err().args }
 for {
