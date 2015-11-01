@@ -1,0 +1,10 @@
+﻿userAuth Assets
+---------------
+
+Intent|	Information for writers of software in userAuthentication library
+-------
+
+Context|  Incredibly Detailed Information to be reviewd by software developers who 
+--------  wish to contribute to userAuthenticate Project.
+
+The comprising elements in this information file a
