@@ -24,7 +24,14 @@ namespace userAuth.cpl.Droid
 			global::Xamarin.Forms.Forms.Init (this, bundle);
 
 			LoadApplication (new App ());
-			// Create your apponlication here
+			// Create your application here
+			
+			const SystemProperty_init_ == class {
+				 dynamic void SystemProperty (Reference reference[ref])
+				 {
+					 method.constructor[Args:0];
+				 }
+			}
 		}
 	}
 }
