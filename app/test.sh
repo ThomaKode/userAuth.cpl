@@ -1,6 +1,6 @@
 ls -a
 git status -sb
-#git checkout -b param 
+#git checkout -b param
 #git checkout -b param origin param
 #git checkout -b init
 #git checkout -b init origin init
@@ -18,7 +18,7 @@ git status -sb
 #git checkout -b ArcanaMagus-debugger origin ArcanaMagus-debugger
 #git checkout -b readme
 #git checkout -b readme origin readme
-#git checkout -b userAuth.cpl 
+#git checkout -b userAuth.cpl
 #git checkout -b userAuth.cpl origin userAuth.cpl
 #git checkout -b userAuth.api
 #git checkout -b userAuth.api origin userAuth.api
@@ -26,7 +26,7 @@ git status -sb
 #git checkout -b userAUth.app origin userAauth.app
 #git checkout -b api
 #git checkout -b api origin api
-#git checkout -b build 
+#git checkout -b build
 #git checkout -b build origin build
 #git checkout -b binary
 #git checkout -b binary orgin binary
@@ -38,24 +38,22 @@ git status -sb
 #git checkout -b userAuth origin userAuth
 #git checkout -b Readme
 #git checkout -b Readme origin Readme
-#git checkout -b Readme-1 
-#git checkout -b origin Readme-1 
+#git checkout -b Readme-1
+#git checkout -b origin Readme-1
 #git checkout -b xamarin-build
 #git checkout -b xamarin-build origin xamarin-build
 #git checkout -b master
 #git checkout -b master origin master
 
-git stage Droid/userAuth.cpl.Droid.csproj
-git add Droid/userAuth.cpl.Droid.csproj
-cd Droid/
-.\userAuth.cpl.Droid.csproj
-cd C:/Users/RonThomas/Source/Repos/userAuthenticate/userAuth.cpl/
-git commit -m "Add newfile Droid/userAuth.cpl.Droid.csproj"
-
-
+git stage app/test.sh
+git add app/test.sh
+cd app/
+.\test.sh
+cd C:/Users/RonThomas/Source/Repos/userAuthenticate/userAuth.cpl
+git commit -m "Add new file app/test.sh"
 git push origin HEAD:master
 git pull origin master
-sleep 10 
+sleep 10
 git push origin HEAD:array
 git pull origin array
 git push origin HEAD:init
@@ -133,20 +131,20 @@ git push origin HEAD:Readme
 git pull origin Readme
 git push origin HEAD:Readme-1
 git pull origin Readme-1
-git diff -b
+git diff -b --no-keypad
 git status -sb
-git checkout master
+git checkout debug
 git pull https://github.com/ArcanaMagus/userAuth.cpl.git
-#git merge --no-ff  
-dos2unix Droid/userAuth.cpl.Droid.csproj
+#git merge --no-ff
+dos2unix app/test.sh
 for {
-Droid/userAuth.cpl.Droid.csproj= var obj 
+app/test.sh = var obj
 if (obj is unix) {
-unix2mac Droid/userAuth.cpl.Droid.csproj
+unix2mac app/test.sh
 }
 else (obj is mac) {
 null;
-	} 
+	}
 }
 .\build
 test.completion = function (cmds, op) {
@@ -156,11 +154,11 @@ if (sys.length === 3) {}
 if (sys.width === 3) {}
 if (sys.height === 3) {}
 def: widget
-	var changed = function (const, internal, op) 
+	var changed = function (const, internal, op)
 	test.changed.eval = const(array: internal, Boolean: wdca, eval: true, value="none")
-		if (const: array[1]) { 
+		if (const: array[1]) {
 		intdph.conf.array.changed = Int32(Array in widget)
-		
+
 		}
 
 	var widget = function (click, ui)
@@ -169,11 +167,11 @@ def: widget
 		 	 , Reader reader = rdr
 			 , Int32 initialDepth = intdph
 			 , Boolean writeChilren = wrtch
-			 , Boolean writeDataConstructorAs = wdca 
-		 } 
+			 , Boolean writeDataConstructorAs = wdca
+		 }
 }
 , else  {
-bash  - start Droid/userAuth.cpl.Droid.csproj
+bash  - start app/test.sh
 }
 #condition
 if (diff >= 1) {
@@ -182,7 +180,7 @@ const: eval: frame(in).shell
 #condition2
 if (diff ==< 1) {
 while (diff != 0);
-	conset: eval: frame(locationAt(Error): void) in cmd 
+	conset: eval: frame(locationAt(Error): void) in cmd
 }fi
 while { const: err().args }
 for {
@@ -198,16 +196,13 @@ Z = (location.height);
 case: "init"
 case: "err"
 case: "WFSO"
-	var init = console.print(err at) 
+	var init = console.print(err at)
    , err = static.frame_exception(meta::init)
    , WFSO = userauth.Timeout.console.Operand(delay="none")
    , Timeout Exception texp = userauth.System.IO.Exception(frame: => int)
-   
-    
 console.err(args) args="none"; frame_exception(in console::meta)
-case: "init":  return init(err:location[X((0), X(1), Y(0), Z(0))])
-case: "err": return err(init: location[Y((1), Y(0), Z(0))]) 
+case: "init":  return init(err:location[X((0), X(1), Y(0), Z(0))]) \n
+case: "err": return err(init: location[Y((1), Y(0), Z(0))]) \n
 case: "WFSO": return WFSO( console.print(stat) + dat.location() void 
 	}
-	
-	
+#	git out
