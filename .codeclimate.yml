@@ -1,0 +1,5 @@
+languages:
+  - C++: true
+  - C#: true
+  solution:
+  - userAuth.cpl.sln
