@@ -13,7 +13,22 @@ using namespoace userAuth.cpl.Droid.Extensions
 		struct node
 		{
 	int property;
-	struct node *next;
+	scruct index $Path;
+	struct node $Property;
+	struct node $Element;
+		}
+
+class multi_element
+{
+private:
+			void create_element(bool key);
+			void create_start(int key);
+			void add_start(int key);
+			void create_path(bool value, int location);
+			void display_element(bool key);
+			void modify_elemnt(int key);
+			void construct_node(int key);
+			void after_display(int value);
 
 		};
 
