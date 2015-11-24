@@ -9,5 +9,6 @@ languages:
   - shell script: true
   - CSS: true
   - Java: true
-  solution:
-  - userAuth.cpl.sln
+  solutions:
+  - Droid/userAuth.cpl.Droid.sln
+  - UITests/userAuth.cpl.UITests.sln
