@@ -1,0 +1,11 @@
+
+languages: 
+ - shell script
+ - csharp
+ - c++
+solutions:
+ - UITests/userAuth.cpl.UITests.sln
+ - Droid/userAuth.spl.Droid.sln
+addons:
+    code_climate:
+        repo_token: 45036537a5685a90f03e3fa652f60ef5b16c3667a7c962a5509b5b4b4b6fa5c0
