@@ -1,5 +1,14 @@
 languages:
   - C++: true
-  - C#: true
-  solution:
-  - userAuth.cpl.sln
+  - csharp: true
+  - Javascript: true
+  - XML: true
+  - Python: true
+  - C: true
+  - HTML: true
+  - shell script: true
+  - CSS: true
+  - Java: true
+  solutions:
+  - Droid/userAuth.cpl.Droid.sln
+  - UITests/userAuth.cpl.UITests.sln
